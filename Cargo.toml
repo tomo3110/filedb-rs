@@ -1,7 +1,12 @@
 [package]
 name = "filedb"
 version = "0.1.0"
-authors = ["saito tomo <uotias64_mole@yahoo.co.jp>"]
+authors = ["tomo3110 <mogu.mole.dev0037@gmail.com>"]
+license = "MIT"
+description = "filedb is simple file-based data. It is implementation by rust lang."
+repository = "https://github.com/tomo3110/filedb-rs"
+readme = "README.md"
+keywords = ["simple", "db", "kvs", "file-base"]
 
 [dependencies]
 failure = "0.1.2"
