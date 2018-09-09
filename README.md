@@ -17,7 +17,7 @@ version = "1.0.0"
 authors = ["my name <hoge@fuga.com>"]
 
 [dependencies]
-filedb = "0.0.1"
+filedb = "0.1.0"
 ```
 
 ## Usage
