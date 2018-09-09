@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["ForEachResultValue","ForEachResultValue構造体    for_each関数の返却値  "],["RemoveResultValue","RemoveResultValue構造体    remove_each関数の返却値  "],["SelectResultValue","SelectResultValue構造体   select_each関数の返却値  "]]});

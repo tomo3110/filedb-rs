@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Error",""]],"mod":[["callback","カラム操作関数(select_each, for_each, remove_each)の返却値   filedbでは返却値により、ファイルを削除や修正、処理の中断などをおこなうため必要となる。"]],"struct":[["C","C構造体   カラムの管理を行う"],["FileDB","FileDB構造体"]],"type":[["Result",""]]});
