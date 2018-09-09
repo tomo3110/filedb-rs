@@ -4,6 +4,5 @@ version = "0.1.0"
 authors = ["saito tomo <uotias64_mole@yahoo.co.jp>"]
 
 [dependencies]
-env_logger = "0.5.12"
 failure = "0.1.2"
 tempfile = "3"
