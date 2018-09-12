@@ -41,7 +41,7 @@ fn main() {
 
     match res {
         Ok(_) => println!("[filedb] success!"),
-        Ok(err) => println!("[filedb] errror... {:?}", err),
+        Err(err) => println!("[filedb] errror... {:?}", err),
     }
 }
 
