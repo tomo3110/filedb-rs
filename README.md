@@ -1,6 +1,8 @@
 # filedb
 
 [![Build Status](https://travis-ci.org/tomo3110/filedb-rs.svg?branch=master)](https://travis-ci.org/tomo3110/filedb-rs)
+[![crate-name at crates.io](https://img.shields.io/crates/v/filedb.svg)](https://crates.io/crates/filedb)
+[![crate-name at docs.rs](https://docs.rs/filedb/badge.svg)](https://docs.rs/filedb)
 
 filedb is simple file-based data.  
 It becomes a rust version of the golang implementation of the following repository.   
@@ -19,7 +21,7 @@ version = "1.0.0"
 authors = ["my name <hoge@fuga.com>"]
 
 [dependencies]
-filedb = "0.1.0"
+filedb = "0.1.1"
 ```
 
 ## Usage
