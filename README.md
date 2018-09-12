@@ -1,5 +1,7 @@
 # filedb
 
+[![Build Status](https://travis-ci.org/tomo3110/filedb-rs.svg?branch=master)](https://travis-ci.org/tomo3110/filedb-rs)
+
 filedb is simple file-based data.  
 It becomes a rust version of the golang implementation of the following repository.   
 
