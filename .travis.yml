@@ -11,4 +11,4 @@ cache: cargo
 script:
   - cargo package
   - cargo test --verbose --all
-  - cargo doc --no-dep
+  - cargo doc --no-deps
