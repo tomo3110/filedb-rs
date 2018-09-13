@@ -28,7 +28,7 @@
 //! use filedb::callback::*;
 //! 
 //! fn main() {
-//!     let mut db = FileDB::connect("/tmp/hoge").unwrap();
+//!     let mut db = FileDB::connect("/tmp/db").unwrap();
 //!     let mut col = match db.c("documents") {
 //!         Ok(c) => c.lock().unwrap(),
 //!         Err(err) => {
@@ -37,7 +37,7 @@
 //!         },
 //!     };
 //!     let res = col.for_each(|index, data| {
-//!         println!("index: {}, text: {:?}", index, data);
+//!         println!("index: {}, text: {}", index, String::from_utf8(data).unwrap());
 //! 
 //!         ForEachResultValue::new(false)
 //!     });
