@@ -4,7 +4,6 @@ use std::ffi::OsStr;
 use std::fs;
 use std::fs::DirEntry;
 use std::fs::OpenOptions;
-use std::io;
 use std::path::{Path, PathBuf};
 use std::sync::Mutex;
 
