@@ -15,7 +15,7 @@
 //! authors = ["my name <hoge@fuga.com>"]
 //! 
 //! [dependencies]
-//! filedb = "0.0.1"
+//! filedb = "0.1.1"
 //! ```
 //! 
 //! ## Usage
@@ -28,16 +28,23 @@
 //! use filedb::callback::*;
 //! 
 //! fn main() {
-//!     let mut db = FileDB::default();
+//!     let mut db = FileDB::connect("/tmp/hoge").unwrap();
+//!     let mut col = match db.c("documents") {
+//!         Ok(c) => c.lock().unwrap(),
+//!         Err(err) => {
+//!             println!("[filedb] failed instance col struct.");
+//!             return;
+//!         },
+//!     };
 //!     let res = col.for_each(|index, data| {
-//!         println!("index: {}, text: {}", index, String::from_utf8(&data));
+//!         println!("index: {}, text: {:?}", index, data);
 //! 
 //!         ForEachResultValue::new(false)
 //!     });
 //! 
 //!     match res {
 //!         Ok(_) => println!("[filedb] success!"),
-//!         Ok(err) => println!("[filedb] errror... {:?}", err),
+//!         Err(err) => println!("[filedb] errror... {:?}", err),
 //!     }
 //! }
 //! 

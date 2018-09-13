@@ -1,6 +1,6 @@
 # filedb
 
-[![Build Status](https://travis-ci.org/tomo3110/filedb-rs.svg?branch=master)](https://travis-ci.org/tomo3110/filedb-rs)
+[![Build Status](https://travis-ci.com/tomo3110/filedb-rs.svg?branch=master)](https://travis-ci.org/tomo3110/filedb-rs)
 [![filedb at crates.io](https://img.shields.io/crates/v/filedb.svg)](https://crates.io/crates/filedb)
 [![filedb at docs.rs](https://docs.rs/filedb/badge.svg)](https://docs.rs/filedb)
 
