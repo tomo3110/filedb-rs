@@ -28,7 +28,7 @@
 //! use filedb::callback::*;
 //! 
 //! fn main() {
-//!     let mut db = FileDB::connect("/tmp/db").unwrap();
+//!     let mut db = FileDB::default();
 //!     let mut col = match db.c("documents") {
 //!         Ok(c) => c.lock().unwrap(),
 //!         Err(err) => {
