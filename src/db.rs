@@ -28,14 +28,9 @@ impl FileDB {
     /// コンストラクタと同様の振る舞いとなります。
     pub fn connect<P: AsRef<OsStr>>(path: P) -> Result<Self> {
         let p = Path::new(&path);
+        // 指定したディレクトリが存在しない時は、新規作成を行う。
         if !p.exists() {
-            return Err(
-                Error::from(
-                    io::Error::from(
-                        io::ErrorKind::NotFound
-                    )
-                )
-            );
+            fs::create_dir_all(p)?;
         }
         if !p.is_dir() {
             return Err(
@@ -105,8 +100,7 @@ impl FileDB {
 impl Default for FileDB {
     fn default() -> Self {
         let path = home_dir().unwrap_or_default().join(".backupfs");
-        let cmap = HashMap::new();
-        FileDB { path, cmap }
+        FileDB::connect(path).unwrap()
     }
 }
 
