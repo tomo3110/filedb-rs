@@ -51,6 +51,7 @@
 //! ```
 //! 
 
+extern crate dirs;
 #[macro_use]
 extern crate failure;
 extern crate tempfile;
