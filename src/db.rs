@@ -99,7 +99,7 @@ impl FileDB {
 
 impl Default for FileDB {
     fn default() -> Self {
-        let path = home_dir().unwrap_or_default().join(".backupfs");
+        let path = home_dir().unwrap_or_default().join(".filedb");
         FileDB::connect(path).unwrap()
     }
 }
