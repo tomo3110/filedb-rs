@@ -1,6 +1,6 @@
 [package]
 name = "filedb"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["tomo3110 <mogu.mole.dev0037@gmail.com>"]
 license = "MIT"
 description = "filedb is simple file-based data. It is implementation by rust lang."
